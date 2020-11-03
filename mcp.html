@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <title>MCP: Weather Observation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=deive-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <body>
+        <nav class="w3-bar w3-black">
+            <a href="index.html" class="w3-button w3-bar-item">
+                Home
+            </a>
+            <a href="./Minecraft Project/intro.html" class="w3-button w3-bar-item">
+                Introduction
+            </a>
+            <a href="./Minecraft Project/join.html" class="w3-button w3-bar-item">
+                Join World
+            </a>
+            <a href="https://github.com/cleverActon0126/MCEDUProject/releases" class="w3-button w3-bar-item">
+                Download World
+            </a>
+        </nav>
+
+        <section>
+            <img class="mySlides" src="./Pictures/2.png" style="width:100%">
+            <img class="mySlides" src="./Pictures/3.png" style="width:100%">
+        </section>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 3000);
+            }
+        </script>
+
+        <section class="w3-container w3-center w3-content" style="max-width:600px">
+         <h2 class="w3-wide">
+            The Minecraft Project
+         </h2>
+         <p class="w3-opacity">
+             <i>
+                 Weather Observation
+             </i>
+         </p>
+        </section>
+
+        <section class="w3-container w3-content w3-center" style="max-width:600px">
+            <p class="w3-justify">
+                Welcome! This is Weather Observation's Official site! You may get information about the world, join or download the world.
+            </p>
+        </section>
+
+        <section class="w3-row-padding w3-center w3-light-grey">
+            <article class="w3-third">
+                <p>
+                    Introduction
+                </p>
+                <a href="./Minecraft Project/intro.html">
+                    <img src="./Pictures/4.png" alt="Introduction" style="width:100%">
+                </a>
+            </article>
+            <article class="w3-third">
+                <p>
+                    Join World
+                </p>
+                <a href="./Minecraft Project/join.html">
+                    <img src="./Pictures/5.png" alt="Join World" style="width:100%">
+                </a>
+            </article>
+            <article class="w3-third">
+                <p>
+                    Download World
+                </p>
+                <a href="https://github.com/cleveracton0126/mceduproject/releases">
+                    <img src="./Pictures/6.png" alt="Download World" style="width:100%">
+                </a>
+            </article>
+        </section>
+
+        <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+            <p class="w3-medium">
+                By Acton
+            </p>
+            <p class="w3-medium">
+                Contact me via cleveralton0126@gmail.com
+            </p>
+            <p class="w3-small">
+                Style Provided by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+            </p>
+        </footer>
+    </body>
+</html>
