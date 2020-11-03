@@ -9,7 +9,81 @@
     <body>
         <nav class="w3-bar w3-black">
             <a href="index.html" class="w3-button w3-bar-item">Home</a>
+            <a href="acton.html" class="w3-button w3-bar-item">Acton</a>
+            <a href="aot.html" class="w3-button w3-bar-item">Aot</a>
             <a href="mcp.html" class="w3-button w3-bar-item">Minecraft Project</a>
         </nav>
+
+        <section>
+            <img class="tit" src="./Pictures/Index/2.png" style="width:100%">
+            <img class="tit" src="./Pictures/Index/1.png" style="width:100%">
+        </section>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("tit");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 3000);
+            }
+        </script>
+
+        <section class="w3-container w3-center w3-content" style="max-width:600px">
+            <h2 class="w3-wide">
+                cleverActon0126's website
+            </h2>
+            <p class="w3-opacity">
+                <i>
+                    Subscribe please: <a href="https://bit.ly/cleverActon0126_YoutubeMr1" target="_blank">Youtube Channel</a>
+                </i>
+            </p>
+        </section>
+
+        <section class="w3-row-padding w3-center w3-light-grey">
+            <article class="w3-third">
+                <p>
+                    Acton
+                </p>
+                <a href="./acton.html">
+                    <img src="./Pictures/Index/2.png" alt="Acton" style="width:100%">
+                </a>
+            </article>
+            <article class="w3-third">
+                <p>
+                    Aot
+                </p>
+                <a href="./aot.html">
+                    <img src="./Pictures/Index/3.png" alt="Aot" style="width:100%">
+                </a>
+            </article>
+            <article class="w3-third">
+                <p>
+                    Minecraft Project
+                </p>
+                <a href="./mcp.html">
+                    <img src="./Pictures/MCP/2.png" alt="MCP" style="width:100%">
+                </a>
+            </article>
+        </section>
+        
+        <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+            <p class="w3-medium">
+                By Acton
+            </p>
+            <p class="w3-medium">
+                Contact me via cleveralton0126@gmail.com
+            </p>
+            <p class="w3-small">
+                Style Provided by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+            </p>
+        </footer>
     </body>
 </html>
