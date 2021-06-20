@@ -13,5 +13,49 @@
 
         <a href="../home/" class="w3-button w3-black w3-right">Home</a>
     </nav>
+
+    <section class="w3-gray w3-center">
+        <img name="head" src="../assets/home/1.png" style="width:75%; margin-left: auto; margin-right: auto;">
+        <img name="head" src="../assets/home/2.png" style="width:75%; margin-left: auto; margin-right: auto;">
+        <img name="head" src="../assets/home/3.png" style="width:75%; margin-left: auto; margin-right: auto;">
+    </section>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+        function carousel() {
+            var i;
+            var x = document.getElementsByName("head");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 5000);
+        }
+    </script>
+
+    <section class="w3-container w3-center w3-content" style="max-width:100%">
+        <h1 class="w3-normal">Home</h1>
+        <p class="w3-opacity">Welcome to cleverActon0126.github.io. I don't have much to put here at the moment, but I hope you enjoy your time here.</p>
+    </section>
+
+    <section class="w3-center w3-light-gray w3-row-padding" style="max-width:100%">
+        <article class="w3-third">
+            <a href="../introduction">
+                <p>About Me</p>
+                <img src="../assets/home/4.png" style="width:100%">
+                <p>An introduction to me. </p>
+            </a>
+        </article>
+        <article class="w3-third">
+            <a href="../blog">
+                <p>Blog</p>
+                <img src="../assets/home/5.png" style="width:100%">
+                <p>A blog for daily life, tech and other stuff.</p>
+            </a>
+        </article>
+    </section>
 </body>
 </html>
